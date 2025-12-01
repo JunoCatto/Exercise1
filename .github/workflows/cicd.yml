@@ -39,8 +39,8 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v4
         with:
-          context: ./lab2
-          file: ./lab2/Dockerfile
+          context: ./
+          file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/mvc-structure:latest
 
