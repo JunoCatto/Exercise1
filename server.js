@@ -3,11 +3,9 @@ const app = express();
 const port = 3000;
 import cors from "cors";
 import swaggerUi from "swagger-ui-express";
-import swaggerDocument from "./swagger.json" with { type: "json" };
-
+// import swaggerDocument from "./swagger.json" with { type: "json" };
 
 import { add, subtract, multiply, divide } from "./controller.js";
-
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use(cors());
